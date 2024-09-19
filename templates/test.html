@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1> THE STRONGEST VPN IN THE WORLD. </h1>
+    <h2>Stay secure, stay safe and stay fast.</h2>
+    <div class="getHerc">
+        <img src="{{ url_for('static', filename='images/icons/AI.LOGO.TRANSPARENCY.png') }}" width="160px" alt="">
+        <br>
+        <a href="{{ url_for('pricing') }}"><button class="getHercBtn" type="button">Get Hercules VPN</button></a>
+    </div>
+    <div class="minicap">
+        <div><img src="{{ url_for('static', filename='images/icons/Flag_of_Switzerland_(Pantone).svg.png') }}" height="30px" alt=""><p>Swiss Based</p></div>
+        <div><img class="minicapicons" src="{{ url_for('static', filename='images/icons/file-4.png') }}" height="30px" alt=""><p>30-day money back guarantee</p></div>
+        <div><img src="{{ url_for('static', filename='images/icons/privacylogo.png') }}" height="30px" alt=""><p>Strict no-logs policy</p></div>
+    </div>
+    <div class="mainpic">
+        <img src="{{ url_for('static', filename='images/pictures/AI.VPN.2.jpg') }}" width="900px" alt="">
+    </div>
+    <p id="why"> Why do you need a VPN?<p>
+    <div class="per">
+        <h3><div>Stay Secure</div><p>Your data is encrypted and can be used safely even when using public and unsecured networks.</p></h3>
+        <h3><div>Privacy</div><p>Unlike most VPN's that log your activity, we don't. Everything is kept private.</p></h3>
+        <h3><div>Flexibility</div><p>We have servers throughout the world, allowing you to connect from or to any country you want while keeping the same fast speeds.</p></h3>
+    </div>
+    <div class="multicont">
+        <div class="multi">
+            <img id="tablet" src="{{ url_for('static', filename='images/pictures/AI.Tablet.jpg') }}" height="500px" alt="tablet and pen with digital map">
+            <h3><div>Multi-platform support</div><p>We have applications available for iOS, Windows, Android and Linux. Browse safely on your phone and tablet!
+            <br><br>
+            Whether you're getting work done, going over financials, browsing or even gaming, you can be confident your connection is secure from wherever and whatever you're using.
+            </p></h3>
+        </div>
+    </div><br><br>
+    <br>
+{% endblock %}    
+    <footer>
+        <hr>
+        <div class="fContainer">
+            <div class="fFlexlogo">
+            <img src="{{ url_for('static', filename='images/icons/AI.LOGO.TRANSPARENCY.png') }}" height="50px" alt=""><p>Hercules <span class="footerVPN">VPN</span></p><br>
+            <figcaption>The Strongest VPN in the world.</figcaption>
+            </div>
+            
+
+            <div class="socials">
+                <h5>Follow us:</h5>
+                <a href="https://www.facebook.com/"><img src="{{ url_for('static', filename='images/icons/social svg/facebook-purple_gcxvti.svg') }}" alt="" height="60px"></a>
+                <a href="https://www.instagram.com/"><img src="{{ url_for('static', filename='images/icons/social svg/instagram-purple_qrninv.svg') }}" alt="" height="60px"></a>
+                <a href="https://www.youtube.com/"><img src="{{ url_for('static', filename='images/icons/social svg/youtube-purple_nuezps.svg') }}" alt="" height="60px"></a>
+                <a href="https://www.x.com/"><img src="{{ url_for('static', filename='images/icons/social svg/x-widestroke-purple_f4zjnu.svg') }}" alt="" height="60px"></a>
+            </div>
+        </div>
+        
+<br><br>
+<hr>
+<br><br>
+        <h6>Hercules GRP<p>999 Broadway Suite 99 <br>
+            Manhattan, NY USA</p></h6>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+.billnote{
+    font-size: 12px;
+}
+
+button{
+    border-radius: 100px;
+    width:300px;
+    height:50px;
+    background-color: rgba(89, 0, 255, 0.76);
+    color:white;
+    text-shadow: 1px 1px black;
+    font-size: 20px;
+    transition: transform .2s;
+    z-index: 10;
+    
+    
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.6);
+  
+}
+
+button:active {
+    border: inset;
+    transform: scale(80%);
+    
+    
+}
+
+.priceboxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+
+.pricing1, .pricing2, .pricing3 {
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid blue; 
+    border-radius: 20px;
+    padding:1%;
+    height:300px;
+    width: 300px;
+    margin:1%;
+    font-size:30px; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    z-index: 4;
+}

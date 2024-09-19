@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1> THE STRONGEST VPN IN THE WORLD. </h1>
+
+    <h2>Stay secure, stay safe and stay fast.</h2>
+
+    <div class="getHerc">
+        <img src="{{ url_for('static', filename='images/icons/AI.LOGO.TRANSPARENCY.png') }}" width="160px" alt="">
+        <br>
+        <a href="{{ url_for('pricing') }}"><button class="getHercBtn" type="button">Get Hercules VPN</button></a>
+    </div>
+
+    <div class="minicap">
+        <div><img src="{{ url_for('static', filename='images/icons/Flag_of_Switzerland_(Pantone).svg.png') }}" height="30px" alt=""><p>Swiss Based</p></div>
+        <div><img class="minicapicons" src="{{ url_for('static', filename='images/icons/file-4.png') }}" height="30px" alt=""><p>30-day money back guarantee</p></div>
+        <div><img src="{{ url_for('static', filename='images/icons/privacylogo.png') }}" height="30px" alt=""><p>Strict no-logs policy</p></div>
+    </div>
+
+    <div class="mainpic">
+        <div class="mainpicimg1">
+            <img class="mainpicimg"src="{{ url_for('static', filename='images/pictures/AI.VPN.2.jpg') }}" width="900px" alt="">
+        </div>
+    </div>
+
+    <p id="why"> Why do you need a VPN?<p>
+
+    <div class="per">
+        <h3><div>Stay Secure</div><p>Your data is encrypted and can be used safely even when using public and unsecured networks.</p></h3>
+        <h3><div>Privacy</div><p>Unlike most VPN's that log your activity, we don't. Everything is kept private.</p></h3>
+        <h3><div>Flexibility</div><p>We have servers throughout the world, allowing you to connect from or to any country you want while keeping the same fast speeds.</p></h3>
+    </div>
+
+    <div class="multicont">
+        <div class="multi">
+            <div class="multitab1">
+                <img class="multitab" id="tablet" src="{{ url_for('static', filename='images/pictures/AI.Tablet.jpg') }}"  alt="tablet and pen with digital map">
+            </div>
+            <h3><div class="mcTitle">Multi-platform support</div><p>We have applications available for iOS, Windows, Android and Linux. Browse safely on your phone and tablet!
+            <br><br>
+            Whether you're getting work done, going over financials, browsing or even gaming, you can be confident your connection is secure from wherever and whatever you're using.
+            </p></h3>
+        </div>
+    </div><br><br>
+    <br>
+
+{% endblock %}

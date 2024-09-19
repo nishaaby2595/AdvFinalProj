@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="contact-container">
+
+        <h1>Contact Us</h1>
+
+        <h2>We are here to help you 24/7</h2><br>
+
+        <div class="contact-info">
+
+            <!-- <h3>Customer Service Assistant:</h3> -->
+            <p><strong>Phone:</strong> +1-800-555-1234</p>
+            <p><strong>Email:</strong> support@herculesvpn.com</p>
+        </div>
+        <div class="contact-form">
+
+            <!-- <h3>Note</h3> -->
+            <form id="contactForm">
+                <!-- <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> -->
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="instructions">Leave us a message:</label>
+                <textarea id="instructions" name="instructions" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div><br>
+
+{% endblock %}
